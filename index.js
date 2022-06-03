@@ -8,11 +8,12 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 const sorter = (nameList, sortType) => {
   let arr = sortType(nameList);
+  let newArr = [];
   arr.forEach((nama, index) => {
-    arr[index] = `${index+1}. ${arr[index]}`;
+    newArr.push(`${index+1}. ${arr[index]}`);
   });
 
-  return arr;
+  return newArr;
 };
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
